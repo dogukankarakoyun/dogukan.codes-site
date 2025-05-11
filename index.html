@@ -1,109 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dogukan.codes</title>
-  <style>
-    body {
-      margin: 0;
-      background: #111;
-      color: #eee;
-      font-family: 'Courier New', Courier, monospace;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #fff;
-      font-weight: bold;
-      font-size: 3rem;
-      margin-bottom: 0.5em;
-    }
-    h2 {
-      font-size: 2rem;
-      color: #eee;
-      margin-top: 0;
-    }
-    a {
-      color: #3399ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      padding: 100px 50px;
-      max-width: 800px;
-    }
-    .project {
-      margin-bottom: 80px;
-      border-top: 1px solid #333;
-      padding-top: 20px;
-    }
-    footer {
-      font-size: 0.8rem;
-      padding: 50px;
-      color: #555;
-    }
-    @media (max-width: 600px) {
-      .section {
-        padding: 50px 20px;
-      }
-      h1 {
-        font-size: 2.2rem;
-      }
-      h2 {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
-</head>
-<body>
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Doğukan Karakoyun | dogukan.codes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <div class="section">
-    <h1>dogukan.codes</h1>
-    <h2>Doğukan Karakoyun / Informatics Student</h2>
-    <p>Studying Computer Science at the University of Rostock.<br>
-    Passionate about backend development, UI design, databases and clean code.</p>
-  </div>
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-  <div class="section">
-    <h1>About Me</h1>
-    <p>I am currently focusing on backend development with Java, Spring Boot, and database systems.<br>
-    I am also exploring Haskell, functional programming, and building small personal projects for practice.<br>
-    I enjoy learning new technologies, minimal web design, and improving developer workflows.</p>
-  </div>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-  <div class="section">
-    <h1>Latest Projects</h1>
+    <body>
 
-    <div class="project">
-      <a href="#">taskvault.dev</a><br>
-      University Sprint Project · Spring Boot<br>
-      Developed REST API and UI design.
-    </div>
+        <header role="banner" class="header">
+            <div class="header__wrapper">
+                <a class="header__logo">dogukan.codes</a>
+                <nav role="navigation" class="nav">
+                    <ul class="nav__items">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#0">
+                                Latest Projects
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#1">
+                                About Me
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#2">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <div class="project">
-      <a href="#">rostockplanner.app</a><br>
-      Personal Study Planner · JavaFX<br>
-      Focused on task management and notifications.
-    </div>
+        <main role="main" class="main">
 
-    <div class="project">
-      <a href="#">ankify</a><br>
-      Anki Tag Parser · Haskell CLI<br>
-      Developed a tool to manage and organize Anki tags via CLI.
-    </div>
+            <section class="page page--home">
+                <h1 class="logo">dogukan.codes</h1>
+                <h2 class="logo__description">Doğukan Karakoyun / <br/>Informatics Student</h2>
+                <p class="logo__text">Studying Computer Science at the University of Rostock.
+                Passionate about backend development, UI design, databases and clean code.
+                </p>
+            </section>
 
-  </div>
+            <section class="page">
+                <h1 class="page__header">Latest Projects</h1>
+                <div class="page__content">
+                    <ul class="projects">
+                        <li class="project">
+                            <h3 class="project__name">
+                                <a href="https://github.com/dogukankarakoyun">
+                                    github.com/dogukankarakoyun
+                                </a>
+                            </h3>
+                            <p>Personal GitHub Portfolio</p>
+                            <p>Includes backend, databases, web projects, and more.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-  <div class="section">
-    <h1>Contact Me</h1>
-    <p>Email me at <a href="mailto:dogukan@karakoyun.dev">dogukan@karakoyun.dev</a></p>
-  </div>
+            <section class="page">
+                <h1 class="page__header">About Me</h1>
+                <div class="page__content">
+                    <p>I am currently focusing on backend development with Java, Spring Boot, and database systems.
+                    I am also exploring Haskell, functional programming, and building small personal projects for practice.
+                    I enjoy learning new technologies, minimal web design, and improving developer workflows.
+                    </p>
+                </div>
+            </section>
 
-  <footer>
-    © dogukan.codes 2025
-  </footer>
+            <section class="page">
+                <h1 class="page__header">Contact Me</h1>
+                <div class="page__content">
+                    <h3><a href="mailto:dogukan@karakoyun.dev">Email me at dogukan@karakoyun.dev</a></h3>
+                </div>
+            </section>
 
-</body>
+        </main>
+
+        <footer class="footer">
+            &copy; dogukan.codes 2025
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
 </html>
